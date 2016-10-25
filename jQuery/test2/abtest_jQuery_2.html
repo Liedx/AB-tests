@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <title>jQuery 3 AB TASTY</title>
+</head>
+
+<body>
+</body>
+    <script type = "text/javascript">
+
+    	//script executed once all elements from the page are loaded
+    	$(window).load(function() {
+
+    		console.log("page chargée");
+
+    		//displays a line each seconds for 5seconds only
+    		var i = 0;
+    		var temps = setInterval(function() {
+				compte();
+			},1000);
+				
+			function compte() {
+				i++;
+				console.log('page chargée depuis '+i+'s')
+				if (i == 5) {
+					clearInterval(temps);
+
+					//after 5secs stores ABtastyTest key and its value "5 secondes" in the localStorage
+					localStorage.setItem("ABtastyTest", "5 secondes");
+				};
+			};	
+		});
+    </script>
+</html>

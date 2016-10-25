@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="events.js" type="text/javascript"></script>
+    <title>jQuery 3 AB TASTY</title>
+</head>
+
+<body>
+	<button id="myButton">Click me</button>
+</body>
+    <script type = "text/javascript">
+		
+	$("#myButton").on("click", function() {
+		console.log("Thanks for the click !");
+	});
+
+	//Adds a new event on click
+	$("#myButton").on("click", newEvent);
+    </script>
+</html>

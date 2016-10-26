@@ -1,0 +1,14 @@
+//A exécuter directement dans la console du navigateur
+//ajout de parenthèses à agent.getSecretName() et retrait des parenthèses à console.log(stoleSecretName)
+
+var agent = {
+	_name: 'John Doe',
+	getSecretName: function() {
+		return this._name;
+	}
+};
+
+var stoleSecretName = agent.getSecretName();
+
+console.log(stoleSecretName);
+console.log(agent.getSecretName());

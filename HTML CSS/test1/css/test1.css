@@ -1,0 +1,15 @@
+body {
+    font-size: 12px;
+    font-family: 'Arial', Helvetica, Verdana, sans-serif;
+    color: gray;
+}
+
+li {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}

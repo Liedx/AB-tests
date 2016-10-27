@@ -1,6 +1,7 @@
 <!DOCTYPE HTML5>
 <html>
-	
+
+<!-- Ajout de l'encodage et d'un lien pour accéder proprement au fichier CSS séparé du HTML. Tout le CSS de la page HTML a été retiré.-->
 <head>
 	<title>Titre principal de la page</title>
 	<meta charset="utf-8">
@@ -10,12 +11,14 @@
 
 <body>
 	<div id="page">
+
+		<!-- Le but est de rendre plus lisible le code en supprimmant des div pour mettre des balises plus parlantes en html5 comme la balise header -->
 		<header>
 			<div id="monlogo">
 				<a href="/" id="logo_link"><img src="img/monLogo.png" id="logo" alt="Mon Logo"></a>
 			</div>
 
-			<!-- Navigation principale du site -->
+			<!-- Navigation principale du site : ajout d'une balise de navigation -->
 			<nav>
 				<ul>
 					<li><a href="/">Homepage</a></li>
@@ -25,13 +28,15 @@
 			</nav>
 		</header>
 
+		<!-- Balise section qui délimitera l'ensemble de l'affichage principal -->
 		<section>
-			<!-- Titre principal de la page -->
+			<!-- Titre principal de la page autant utiliser h1 -->
 			<h1>Liste de mes articles</h1>
-			<!-- Bloc article entierement cliquable -->
+			<!-- Bloc article entierement cliquable : autant utiliser la balise article -->
 			<article>
 				<div id="article1">
 					<a class="article_title" href="articles/article.html">
+						<!-- Les titres de degré moins important seront en h2 -->
 						<h2>Article 1</h2>
 						<img src="img/img_article1.png" alt="Image article 1">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -45,14 +50,14 @@
 					</a>
 				</div>
 			</article>
-			<!-- barre latérale droite -->
+			<!-- barre latérale droite : la balise aside représente la partie qui sera mise en valeur sur le côté du site-->
 			<aside>
 				<div class="related_content">
 					<!-- incoming -->
 			</aside>
 		</section>
 
-		<!-- footer du site -->
+		<!-- footer du site : utilisation de la balise footer -->
 		<footer>
 			<span>Copyright © nous</span>
 		</footer>

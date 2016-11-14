@@ -1,6 +1,19 @@
 <?php
   $testArray = array("banane" => 16, "pomme" => 17, "orange" => 17);
+  $resultForJS = implode(",",$testArray); // variable contenant le résultat de votre code
 ?>
 <script type="text/javascript" >
-  var tab = <?php echo JSON_Encode($testArray) ; ?> ;
+	//code js généré
+  var tab = <?php echo JSON_Encode($resultForJS) ; ?> ;
+</script>
+
+
+<?php $testArray = array("banane" => 16, "pomme" => 17 , "orange" => 17 );
+	$resultForJs = "";
+	$resultForJs = json_encode($testArray);
+?>
+
+<script type="text/javascript">
+	var testArray = <?=$resultForJs?>;
+	console.log(testArray);
 </script>
